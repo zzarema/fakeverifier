@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Fake Product Verifier</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>Product Verification</h1>
+
+    <!-- Start Button -->
+    <button id="startBtn" class="rounded-btn">Start Verification</button>
+
+    <!-- Hidden Verification Section -->
+    <div id="verificationSection" style="display: none;">
+        <input type="text" id="productIdInput" placeholder="Enter Product ID" />
+        <br />
+        <button id="verify-button" class="rounded-btn">Verify</button>
+        <p id="result"></p>
+
+        <button id="generateQRBtn" class="rounded-btn">Generate QR Code</button>
+        <div class="qr-wrapper">
+            <div id="qrcode" class="qr-container"></div>
+        </div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
